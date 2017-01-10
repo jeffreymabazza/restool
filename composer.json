@@ -1,5 +1,5 @@
 {
-    "name": "webservice/webservice-v1",
+    "name": "lorddashme/webservice-v1",
     "type": "library",
     "description": "Libraries for making API (RESTful) easy in a standard way",
     "keywords": ["webservice","api","restful","rest"],
