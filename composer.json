@@ -1,8 +1,8 @@
 {
-    "name": "webservices/webservices",
+    "name": "webservice/webservice-v1",
     "type": "library",
-    "description": "PHP 5.5",
-    "keywords": ["log","logging"],
+    "description": "Libraries for making API (RESTful) easy in a standard way",
+    "keywords": ["webservice","api","restful","rest"],
     "homepage": "https://github.com/LordDashMe/WebServices",
     "license": "MIT",
     "authors": [
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "webservices": "src"
+            "webservice-v1": "src"
         }
     }
 }
