@@ -19,7 +19,7 @@
     },
     "autoload": {
         "files": [
-            "vendor/lorddashme/webservice-v1/src/API.php"
+            "src/API.php"
         ],
         "psr-4": {"webservice-v1\\": "src/"}
     },
