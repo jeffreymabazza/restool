@@ -38,3 +38,14 @@ PHP >= 5.5.12
 
 ?>
 ```
+
+# To Install
+
+* In your composer.json file add this requirements inorder to install the package.
+
+```
+	"require": {
+	        "php": ">=5.5.12",
+	        "lorddashme/webservice-v1": "v1.0.0"
+	}
+```
