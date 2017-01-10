@@ -45,7 +45,6 @@ PHP >= 5.5.12
 
 ```
 	"require": {
-	        "php": ">=5.5.12",
-	        "lorddashme/webservice-v1": "v1.0.0"
+        "lorddashme/webservice-v1": "v1.0.0"
 	}
 ```
