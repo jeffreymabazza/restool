@@ -18,8 +18,8 @@
         "php": ">=5.5.12"
     },
     "autoload": {
-        "psr-0": {
-            "webservice-v1": "src"
+        "psr-4": {
+            "webservice-v1": "src/"
         }
     }
 }
