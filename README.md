@@ -1,6 +1,6 @@
 # WebService
 
-Library for making API RESTful easy.
+Library for making API (RESTful) easy.
 With the latest Industry Standard Functions and Security.
 
 * version: 1.0.0
