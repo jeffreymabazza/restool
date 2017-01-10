@@ -1,5 +1,5 @@
 {
-    "name": "WebServices/WebServices",
+    "name": "Webservices/Webservices",
     "type": "library",
     "description": "PHP 5.5",
     "keywords": ["log","logging"],
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "WebServices": "src"
+            "webservices": "src"
         }
     }
 }
