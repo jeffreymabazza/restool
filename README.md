@@ -1,11 +1,17 @@
-# WebServices
+# WebService
 
 Library for making API RESTful easy.
 With the latest Industry Standard Functions and Security.
 
+```
+* version: 1.0.0
+```
+
 # PHP Supported Version
 
+```
 PHP >= 5.5.12
+```
 
 # Sample of Usage
 
