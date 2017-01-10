@@ -13,13 +13,14 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=5.5.12"
     },
     "autoload": {
-        "psr-0": {
-            "webservice-v1": "src/"
-        }
-    }
+        "files": [
+            "vendor/lorddashme/webservice-v1/src/API.php"
+        ],
+        "psr-4": {"webservice-v1\\": "src/"}
+    },
+    "minimum-stability": "stable"
 }
