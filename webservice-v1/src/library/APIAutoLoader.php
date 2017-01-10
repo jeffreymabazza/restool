@@ -51,10 +51,9 @@ class APIAutoLoader {
 	 */
 	public function load() {
 
-		foreach ($this->routes as $folder => $subfolder) {
-			foreach ($subfolder as $class) {
-				$path = realpath(APPLICATION_PATH .'/libraries/plugins/'. $this->plugin .'/src/'. $folder. '/'. $class .'.php');
-	    		require_once($path);
+		foreach ($this->routes as $folder => $dir) {
+			foreach ($dir as $class) {
+	    		require_once($this->plugin.'/'.$folder.'/'.$class.'.php');
 			}
 		}
 	}

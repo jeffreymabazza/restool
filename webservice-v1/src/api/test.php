@@ -14,9 +14,8 @@
 
 error_reporting(E_ERROR);
 
-require_once realpath(dirname(__FILE__) .'/..') .'/libraries/API.php';
+require_once realpath(dirname(__FILE__) .'/..') .'/API.php';
 
-use Libraries\API;
 use Libraries\APIStatus;
 use Libraries\APIConstant;
 use Libraries\APIDatabase;

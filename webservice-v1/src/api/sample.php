@@ -12,11 +12,10 @@
  * @author Joshua Clifford Reyes
  */
 
-error_reporting(E_ERROR);
+error_reporting(E_ALL);
 
-require_once realpath(dirname(__FILE__) .'/..') .'/libraries/API.php';
+require_once realpath(dirname(__FILE__) .'/..') .'/API.php';
 
-use Libraries\API;
 use Libraries\APIStatus;
 use Libraries\APIConstant;
 use Libraries\APIValidator;

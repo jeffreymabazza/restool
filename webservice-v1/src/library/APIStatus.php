@@ -16,12 +16,18 @@ namespace Libraries;
 
 class APIStatus {
 
-	##########################################################
-	# COMMON STATUS MESSAGE
-	##########################################################
+	/*
+    |--------------------------------------------------------------------------
+    | Common Message Status
+    |--------------------------------------------------------------------------
+    |
+    | This constant used to define all common message status to be use.
+    |
+    */
+
 	const SUCCESS	   = 'SUCCESS';
 	const ERROR	 	   = 'ERROR';
 	const FAILED  	   = 'FAILED';
 	const UNAUTHORIZED = 'UNAUTHORIZED';
-	##########################################################
+
 }
