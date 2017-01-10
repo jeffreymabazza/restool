@@ -1,5 +1,5 @@
 {
-    "name": "Webservices/Webservices",
+    "name": "webservices/webservices",
     "type": "library",
     "description": "PHP 5.5",
     "keywords": ["log","logging"],
