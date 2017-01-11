@@ -2,9 +2,7 @@
   restling (PHP Library)
 =========================================
 
-[![Latest Version](https://img.shields.io/packagist/v/fxp/composer-asset-plugin.svg)](https://packagist.org/packages/lorddashme/restling)
-
-[![Packagist Downloads](https://img.shields.io/packagist/dt/fxp/composer-asset-plugin.svg)](https://packagist.org/packages/lorddashme/restling/stats)
+[![Latest Version](https://img.shields.io/packagist/v/lorddashme/webservice-v1.svg)](https://packagist.org/packages/lorddashme/restling)[![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/webservice-v1.svg)](https://packagist.org/packages/lorddashme/restling/stats)
 
 # About
 
