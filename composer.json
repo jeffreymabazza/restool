@@ -1,9 +1,9 @@
 {
-    "name": "lorddashme/restling",
+    "name": "lorddashme/restool",
     "type": "library",
     "description": "PHP Library for making API (RESTful) easy and secured in a standard way",
     "keywords": ["WebServices","API","RESTful","RESTling","REST","PHP","HTTP"],
-    "homepage": "https://github.com/LordDashMe/restling",
+    "homepage": "https://github.com/LordDashMe/restool",
     "license": "MIT",
     "authors": [
         {
@@ -15,13 +15,13 @@
     ],
     "require": {
         "php": ">=5.5.12",
-        "lorddashme/restling": "v1.0.0"
+        "lorddashme/restool": "v1.0.0"
     },
     "autoload": {
         "files": [
             "src/RESTling.php"
         ],
-        "psr-4": {"restling\\": "src/"}
+        "psr-4": {"restool\\": "src/"}
     },
     "minimum-stability": "stable"
 }

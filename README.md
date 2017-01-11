@@ -1,8 +1,8 @@
 
-  restling (PHP Library)
+  RESTool (PHP Library)
 =========================================
 
-[![Latest Version](https://img.shields.io/packagist/v/lorddashme/restling.svg?colorB=e50000)](https://packagist.org/packages/lorddashme/restling) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restling.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restling/stats)
+[![Latest Version](https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=e50000)](https://packagist.org/packages/lorddashme/restool) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool/stats)
 
 # About
 
@@ -48,11 +48,11 @@ PHP >= 5.5.12
 
 ```
 	"require": {
-        "lorddashme/restling": "v1.0.0"
+        "lorddashme/restool": "v1.0.0"
 	}
 ```
 
 * Using CLI command, copy and execute this command in the target project:
 ```
-	composer require lorddashme/restling
+	composer require lorddashme/restool
 ```
