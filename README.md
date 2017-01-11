@@ -10,7 +10,7 @@ Library for making API (RESTful) easy. With the latest Industry Standard Functio
 
 * version: 1.0.0
 
-# PHP Supported Version
+# Requirements
 
 ```
 PHP >= 5.5.12
@@ -20,25 +20,7 @@ PHP >= 5.5.12
 
 ```
 <?php
-
-	error_reporting(E_ALL);
-
-	use REST\RESTStatus;
-	use REST\RESTConstant;
-	use REST\RESTValidator;
-	use REST\RESTUtilities;
-
-	RESTUtilities::setHeader();
-	RESTUtilities::setMethod('GET');
-
-	RESTUtilities::setResponse(
-		RESTConstant::HTTP_OK, 
-		RESTStatus::SUCCESS, 
-		'Hello World !'
-	);
-
-	error_reporting(0);
-
+	echo 'Hello World!';
 ?>
 ```
 

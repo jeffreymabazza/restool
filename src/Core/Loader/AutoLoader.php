@@ -1,20 +1,15 @@
 <?php
 
-namespace REST;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace Restool\Core\Loader;
 
 /**
- * Description of RESTAutoLoader
+ * Autoload Core Class
  *
- * @author Joshua Clifford Reyes
+ * @author Joshua Clifford Reyes<reyesjoshuacliffrord@gmail.com>
+ * @since January 2017
  */
 
-class RESTAutoLoader {
+class AutoLoader {
 
 	/**
 	 * Plugin name.
@@ -35,7 +30,7 @@ class RESTAutoLoader {
 	 *
 	 * @param string $plugin
 	 * @param array $routes
-	 * @return class context
+	 * @return $this
 	 */
 	public function routes(string $plugin, array $routes) {
 		
@@ -45,7 +40,8 @@ class RESTAutoLoader {
 	}
 
 	/**
-	 * Time and Space Complexity is O(n^2).
+	 * Performance: Time Complexity  
+	 * 	- Worst-case O(n^2)
 	 *
 	 * @return void
 	 */
