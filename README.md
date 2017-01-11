@@ -1,5 +1,7 @@
 
-# RESTool [![Latest Version](https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=e50000)](https://packagist.org/packages/lorddashme/restool) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool/stats)
+# RESTool 
+
+[![Latest Version](https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=e50000)](https://packagist.org/packages/lorddashme/restool) [![Release](https://img.shields.io/github/release/lorddashme/restool.svg?colorB=00e500)](https://github.com/LordDashMe/restool/releases) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool/stats) 
 
 # About
 A PHP Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.
@@ -13,7 +15,16 @@ PHP >= 5.5.12
 # Sample of Usage
 ```
 <?php
-	echo 'Hello World!';
+	error_reporting(E_ALL);
+
+	require __DIR__ . '/vendor/autoload.php';
+
+	use Restool\Core\Request\Request;
+	use Restool\Core\Response\Response;
+	use Restool\Plugins\Hashing\DefaultHasher;
+
+	Request::method('GET');
+	Response::encode(200, DefaultHasher::make('Hello World!', 8), false);
 ?>
 ```
 
