@@ -2,16 +2,11 @@
 
 namespace Restool\Plugins\Encryption;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of OpenSSLEncrypter
+ * OpenSSLEncrypter
  *
- * @author Joshua Clifford Reyes
+ * @author Joshua Clifford Reyes<reyesjoshuacliffrord@gmail.com>
+ * @since January 2017
  */
 
 use RuntimeException;

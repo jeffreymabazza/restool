@@ -30,3 +30,8 @@ PHP >= 5.5.12
 ```
 	composer require lorddashme/restool
 ```
+
+# Author
+```
+	Joshua Clifford Reyes<reyesjoshuacliffrord@gmail.com>
+```
