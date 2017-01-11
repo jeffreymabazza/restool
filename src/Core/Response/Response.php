@@ -9,10 +9,12 @@ namespace Restool\Core\Response;
  * @since January 2017
  */
 
+use Restool\Core\Utilities\ServerInfo;
+
 class Response {
 
 	/**
-     * Default JSON (RESTful) response.
+     * Default JSON (RESTful) response
      *
      * @param int $code - HTTP Code
      * @param string $message - Rsult Data of Request
@@ -23,22 +25,18 @@ class Response {
 		
 		Response::header($code);
 
-		if ($error) {
-			echo json_encode($message);
-			exit(0);
-		}
-
         echo json_encode(
         	array(
 		 		'status' => Response::httpCode($code),
 	            'message' => $message,
 	            'error' => $error,
+                'server-time' => ServerInfo::time()
         	)
         );
 	}
 
 	/**
-     * Response Header.
+     * Response Header
      *
      * @param int $code - HTTP Code
      * @return void
@@ -69,7 +67,7 @@ class Response {
 	}
 
 	/**
-     * List of HTTP Code.
+     * List of HTTP Code
      *
      * @param int $code - HTTP Code
      * @return string

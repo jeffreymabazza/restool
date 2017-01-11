@@ -12,8 +12,9 @@ namespace Restool\Core\Utilities;
 class UserAgent {
 
 	/**
-     * Get Current Used Browser.
-     * Time and Space Complexity is O(1).
+     * Get Current Used Browser
+     * Performance: Time Complexity
+     *  - Worst-case O(1).
      *
      * @return string
      */

@@ -12,9 +12,9 @@ namespace Restool\Core\Request;
 class Request {
 
 	/**
-     * Allowed Request Method.
+     * Allowed Request Method
      *
-     * @return json
+     * @return void
      */
 	public static function method($method) {
 

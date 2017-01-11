@@ -1,6 +1,6 @@
 <?php
 
-namespace REST\Plugin\Encryption;
+namespace Restool\Plugins\Encryption;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

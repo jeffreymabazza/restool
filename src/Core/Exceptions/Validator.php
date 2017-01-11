@@ -14,7 +14,7 @@ use Exception;
 class Validator {
 
 	/**
-     * Validate Database Connection.
+     * Validate Database Connection
      *
      * @param array $connection
      * @return void
@@ -27,7 +27,7 @@ class Validator {
 	}
 
 	/**
-     * Validate Input Empty.
+     * Validate Input Empty
      *
      * @param string $input
      * @param string $field
@@ -43,7 +43,7 @@ class Validator {
 	}
 
 	/**
-     * Validate Input Array.
+     * Validate Input Array
      *
      * @param array $input
      * @param string $field
@@ -59,7 +59,7 @@ class Validator {
 	}
 
 	/**
-     * Validate Input Integer.
+     * Validate Input Integer
      *
      * @param integer $input
      * @param string $field
@@ -75,7 +75,7 @@ class Validator {
 	}
 
 	/**
-     * Validate Input String.
+     * Validate Input String
      *
      * @param string $input
      * @param string $field
@@ -91,7 +91,7 @@ class Validator {
     }
 
     /**
-     * Validate Input Boolean.
+     * Validate Input Boolean
      *
      * @param boolean $input
      * @param string $field

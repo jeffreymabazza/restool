@@ -1,6 +1,6 @@
 <?php
 
-namespace REST\Plugin\Hashing;
+namespace Restool\Plugins\Hashing;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

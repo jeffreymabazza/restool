@@ -12,7 +12,7 @@ namespace Restool\Core\Utilities;
 class ServerInfo {
 
 	/**
-     * Server Time.
+     * Get Current Server DateTime
      *
      * @return date
      */

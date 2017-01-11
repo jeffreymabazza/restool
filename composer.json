@@ -1,7 +1,7 @@
 {
     "name": "lorddashme/restool",
     "type": "package",
-    "description": "PHP Library for making API (RESTful) easy and secured in a standard way",
+    "description": "A PHP Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.",
     "keywords": ["WebServices","API","RESTful","RESTling","REST","PHP","HTTP"],
     "homepage": "https://github.com/LordDashMe/restool",
     "license": "MIT",
