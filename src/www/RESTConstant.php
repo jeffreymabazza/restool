@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries;
+namespace REST;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,12 +9,12 @@ namespace Libraries;
  */
 
 /**
- * Description of APIConstant
+ * Description of RESTConstant
  *
  * @author Joshua Clifford Reyes
  */
 
-class APIConstant {
+class RESTConstant {
 
 	const VERSION = 'v1.0.0';
 	const AUTHOR = 'LordDashMe';

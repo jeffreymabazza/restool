@@ -1,6 +1,6 @@
 <?php
 
-namespace Enlighten\Hashing;
+namespace REST\Plugin\Hashing;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,21 +9,21 @@ namespace Enlighten\Hashing;
  */
 
 /**
- * Description of DefaultHasher
+ * Description of BycryptHasher
  *
  * @author Joshua Clifford Reyes
  */
 
 use RuntimeException;
 
-class DefaultHasher {
+class BycryptHasher {
 
 	/**
 	 * Default cost for crypt
 	 *
 	 * @var int
 	 */
-	private static $cost = 8;
+	private static $cost = 10;
 
 	/**
 	 * Hash given value.
@@ -38,7 +38,7 @@ class DefaultHasher {
 
 		$cost = isset($cost) ? $cost : static::$cost;
 
-		$hash = password_hash($value, PASSWORD_DEFAULT, ['cost' => $cost]);
+		$hash = password_hash($value, PASSWORD_BCRYPT, ['cost' => $cost]);
 
 		if ($hash === false) {
 			throw new RuntimeException('Hashing is not supported.');
@@ -83,7 +83,7 @@ class DefaultHasher {
 			return 'Not valid hashed'; 
 		}
 
-		if (password_needs_rehash($hashed, PASSWORD_DEFAULT, ['cost' => $cost])) {
+		if (password_needs_rehash($hashed, PASSWORD_BCRYPT, ['cost' => $cost])) {
 	        return DefaultHasher::make($value, $cost);
 	    }
 
@@ -101,6 +101,6 @@ class DefaultHasher {
 
 		$cost = isset($cost) ? $cost : static::$cost;
 
-		return password_needs_rehash($hashed, PASSWORD_DEFAULT, ['cost' => $cost]);
+		return password_needs_rehash($hashed, PASSWORD_BCRYPT, ['cost' => $cost]);
 	}
 }

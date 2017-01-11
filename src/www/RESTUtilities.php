@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries;
+namespace REST;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,15 +9,15 @@ namespace Libraries;
  */
 
 /**
- * Description of APIUtilities
+ * Description of RESTUtilities
  *
  * @author Joshua Clifford Reyes
  */
 
-use Libraries\APIStatus;
-use Libraries\APIConstant;
+use REST\RESTStatus;
+use REST\RESTConstant;
 
-class APIUtilities {
+class RESTUtilities {
 
 	/**
      * Set configuration for HTTP header.
@@ -31,7 +31,7 @@ class APIUtilities {
 		if (isset($_SERVER['HTTP_ORIGIN'])) {
             header('Access-Control-Allow-Origin: '. $_SERVER['HTTP_ORIGIN']);
             header('Access-Control-Allow-Credentials: true');
-            header('Access-Control-Max-Age: '. APIConstant::HEADER_MAX_AGE);
+            header('Access-Control-Max-Age: '. RESTConstant::HEADER_MAX_AGE);
         }
 
         if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
@@ -56,9 +56,9 @@ class APIUtilities {
 	public static function setMethod($method) {
 
 		if ($_SERVER['REQUEST_METHOD'] != $method) {
-            APIUtilities::setResponse(
-                APIConstant::HTTP_UNAUTHORIZED, 
-                APIStatus::ERROR, 
+            RESTUtilities::setResponse(
+                RESTConstant::HTTP_UNAUTHORIZED, 
+                RESTStatus::ERROR, 
                 'Method used is not allowed, use '. $method .' instead.'
             );
 			
@@ -84,9 +84,9 @@ class APIUtilities {
             'response'    => $response,
             
             'info' => array(	
-            	'time' 	  => APIUtilities::serverTime(),
-            	'author'  => APIConstant::AUTHOR,
-	            'version' => APIConstant::VERSION
+            	'time' 	  => RESTUtilities::serverTime(),
+            	'author'  => RESTConstant::AUTHOR,
+	            'version' => RESTConstant::VERSION
             )
         );
 

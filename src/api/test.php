@@ -14,29 +14,26 @@
 
 error_reporting(E_ERROR);
 
-require_once realpath(dirname(__FILE__) .'/..') .'/API.php';
+use REST\RESTStatus;
+use REST\RESTConstant;
+use REST\RESTDatabase;
+use REST\RESTValidator;
+use REST\RESTUtilities;
 
-use Libraries\APIStatus;
-use Libraries\APIConstant;
-use Libraries\APIDatabase;
-use Libraries\APIValidator;
-use Libraries\APIUtilities;
+use REST\Plugin\Hashing\BycryptHasher;
+use REST\Plugin\Encryption\OpenSSLEncrypter;
 
-use Enlighten\Hashing\BycryptHasher;
+RESTUtilities::setHeader();
+RESTUtilities::setMethod('GET');
 
-use Enlighten\Encryption\OpenSSLEncrypter;
-
-APIUtilities::setHeader();
-APIUtilities::setMethod('GET');
-
-APIUtilities::setResponse(
-	APIConstant::HTTP_OK, 
-	APIStatus::SUCCESS, 
+RESTUtilities::setResponse(
+	RESTConstant::HTTP_OK, 
+	RESTStatus::SUCCESS, 
 	BycryptHasher::make('AKO', 8)
 );
 
-$secretKey = 'QUERTY';
-$plainText = 'ANO BANG BAGO?';
+$secretKey = 'YourSecretKey';
+$plainText = 'The plain-text to be ecrypt';
 
 $opensslecrypter = new OpenSSLEncrypter($secretKey, 'AES-256-CTR');
 $encrypted = $opensslecrypter->encrypt($plainText);
@@ -44,6 +41,5 @@ echo $encrypted;
 
 $openssldec = new OpenSSLEncrypter($secretKey, 'AES-256-CTR');
 echo $openssldec->decrypt($encrypted);
-
 
 error_reporting(0);

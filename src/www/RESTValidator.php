@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries;
+namespace REST;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,15 +9,15 @@ namespace Libraries;
  */
 
 /**
- * Description of APIValidator
+ * Description of RESTValidator
  *
  * @author Joshua Clifford Reyes
  */
 
-use Libraries\APIConstant;
-use Libraries\APIException;
+use REST\RESTConstant;
+use REST\RESTException;
 
-class APIValidator {
+class RESTValidator {
 
 	/**
      * Validate Database Connection.
@@ -29,8 +29,8 @@ class APIValidator {
 		
 		if (!$connection) {
 			$message = 'No connection to the Database.';
-			throw new APIException(
-				APIConstant::SERVER_ERROR, 
+			throw new RESTException(
+				RESTConstant::SERVER_ERROR, 
 				$message
 			);
 		}
@@ -47,7 +47,7 @@ class APIValidator {
 		
 		if (empty($input)) {
 			$message = 'The input value is empty! parameter key is ['.$field.']';
-			throw new APIException(APIConstant::INVALID_DATA_TYPE, $message);
+			throw new RESTException(RESTConstant::INVALID_DATA_TYPE, $message);
 		}
 
 		return $input;
@@ -64,7 +64,7 @@ class APIValidator {
 		
 		if (!is_array($input)) {
 			$message = 'The input value is not a Array type! parameter key is ['.$field.']';
-			throw new APIException(APIConstant::INVALID_DATA_TYPE, $message);
+			throw new RESTException(RESTConstant::INVALID_DATA_TYPE, $message);
 		}
 
 		return $input;
@@ -81,7 +81,7 @@ class APIValidator {
 		
 		if (!is_numeric($input)) {
 			$message = 'The input value is not a Numeric type! parameter key is ['.$field.']';
-			throw new APIException(APIConstant::INVALID_DATA_TYPE, $message);
+			throw new RESTException(RESTConstant::INVALID_DATA_TYPE, $message);
 		}
 
 		return $input;
@@ -98,7 +98,7 @@ class APIValidator {
 		
 		if (!is_string($input)) {
 			$message = 'The input value is not a String type! parameter key is ['.$field.']';
-			throw new APIException(APIConstant::INVALID_DATA_TYPE, $message);
+			throw new RESTException(RESTConstant::INVALID_DATA_TYPE, $message);
 		}
 
 		return $input;
@@ -115,7 +115,7 @@ class APIValidator {
     	
     	if (!is_bool($input)) {
 			$message = 'The input value is not a Boolean type! parameter key is ['.$field.']';
-			throw new APIException(APIConstant::INVALID_DATA_TYPE, $message);
+			throw new RESTException(RESTConstant::INVALID_DATA_TYPE, $message);
 		}
 
 		return $input;

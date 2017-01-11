@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries;
+namespace REST;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,12 +9,12 @@ namespace Libraries;
  */
 
 /**
- * Description of APIStatus
+ * Description of RESTStatus
  *
  * @author Joshua Clifford Reyes
  */
 
-class APIStatus {
+class RESTStatus {
 
 	/*
     |--------------------------------------------------------------------------

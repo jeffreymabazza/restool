@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries;
+namespace REST;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,14 +9,14 @@ namespace Libraries;
  */
 
 /**
- * Description of APIException
+ * Description of RESTException
  *
  * @author Joshua Clifford Reyes
  */
 
 use Exception;
 
-class APIException extends Exception {
+class RESTException extends Exception {
 
 	/**
      * Exception Error.

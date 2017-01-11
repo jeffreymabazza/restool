@@ -1,7 +1,14 @@
-# WebService
 
-Library for making API (RESTful) easy.
-With the latest Industry Standard Functions and Security.
+  restling (PHP Library)
+=========================================
+
+[![Latest Version](https://img.shields.io/packagist/v/fxp/composer-asset-plugin.svg)](https://packagist.org/packages/lorddashme/restling)
+
+[![Packagist Downloads](https://img.shields.io/packagist/dt/fxp/composer-asset-plugin.svg)](https://packagist.org/packages/lorddashme/restling/stats)
+
+# About
+
+Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.
 
 * version: 1.0.0
 
@@ -16,20 +23,20 @@ PHP >= 5.5.12
 ```
 <?php
 
-	error_reporting(E_ERROR);
-	
-	use Libraries\APIStatus;
-	use Libraries\APIConstant;
-	use Libraries\APIValidator;
-	use Libraries\APIUtilities;
+	error_reporting(E_ALL);
 
-	APIUtilities::setHeader();
-	APIUtilities::setMethod('GET');
+	use REST\RESTStatus;
+	use REST\RESTConstant;
+	use REST\RESTValidator;
+	use REST\RESTUtilities;
 
-	APIUtilities::setResponse(
-		APIConstant::HTTP_OK, 
-		APIStatus::SUCCESS, 
-		'Default Implementation Example of API RESTful'
+	RESTUtilities::setHeader();
+	RESTUtilities::setMethod('GET');
+
+	RESTUtilities::setResponse(
+		RESTConstant::HTTP_OK, 
+		RESTStatus::SUCCESS, 
+		'Hello World !'
 	);
 
 	error_reporting(0);
@@ -39,10 +46,15 @@ PHP >= 5.5.12
 
 # To Install
 
-* In your composer.json file add this requirements inorder to install the package.
+* In your composer.json file add this require:
 
 ```
 	"require": {
-        "lorddashme/webservice-v1": "v1.0.0"
+        "lorddashme/restling": "v1.0.0"
 	}
+```
+
+* Using CLI command, copy and execute this command in the target project:
+```
+	composer require lorddashme/restling
 ```

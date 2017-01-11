@@ -14,19 +14,17 @@
 
 error_reporting(E_ALL);
 
-require_once realpath(dirname(__FILE__) .'/..') .'/API.php';
+use REST\RESTStatus;
+use REST\RESTConstant;
+use REST\RESTValidator;
+use REST\RESTUtilities;
 
-use Libraries\APIStatus;
-use Libraries\APIConstant;
-use Libraries\APIValidator;
-use Libraries\APIUtilities;
+RESTUtilities::setHeader();
+RESTUtilities::setMethod('GET');
 
-APIUtilities::setHeader();
-APIUtilities::setMethod('GET');
-
-APIUtilities::setResponse(
-	APIConstant::HTTP_OK, 
-	APIStatus::SUCCESS, 
+RESTUtilities::setResponse(
+	RESTConstant::HTTP_OK, 
+	RESTStatus::SUCCESS, 
 	'Default Implementation Example of API RESTful'
 );
 

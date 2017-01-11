@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries;
+namespace REST;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,12 +9,12 @@ namespace Libraries;
  */
 
 /**
- * Description of APIAutoLoader
+ * Description of RESTAutoLoader
  *
  * @author Joshua Clifford Reyes
  */
 
-class APIAutoLoader {
+class RESTAutoLoader {
 
 	/**
 	 * Plugin name.
@@ -37,7 +37,7 @@ class APIAutoLoader {
 	 * @param array $routes
 	 * @return class context
 	 */
-	public function routes($plugin, array $routes) {
+	public function routes(string $plugin, array $routes) {
 		
 		$this->plugin = $plugin;
 		$this->routes = $routes;

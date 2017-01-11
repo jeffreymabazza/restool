@@ -1,9 +1,9 @@
 {
-    "name": "lorddashme/webservice-v1",
+    "name": "lorddashme/restling",
     "type": "library",
-    "description": "Libraries for making API (RESTful) easy in a standard way",
-    "keywords": ["webservice","api","restful","rest"],
-    "homepage": "https://github.com/LordDashMe/WebServices",
+    "description": "PHP Library for making API (RESTful) easy and secured in a standard way",
+    "keywords": ["WebServices","API","RESTful","RESTling","REST","PHP","HTTP"],
+    "homepage": "https://github.com/LordDashMe/restling",
     "license": "MIT",
     "authors": [
         {
@@ -15,13 +15,13 @@
     ],
     "require": {
         "php": ">=5.5.12",
-        "lorddashme/webservice-v1": "v1.0.0"
+        "lorddashme/restling": "v1.0.0"
     },
     "autoload": {
         "files": [
-            "src/API.php"
+            "src/RESTling.php"
         ],
-        "psr-4": {"webservice-v1\\": "src/"}
+        "psr-4": {"restling\\": "src/"}
     },
     "minimum-stability": "stable"
 }

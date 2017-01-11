@@ -1,6 +1,6 @@
 <?php
 
-namespace Enlighten\Encryption;
+namespace REST\Plugin\Encryption;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
