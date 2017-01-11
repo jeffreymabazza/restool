@@ -1,8 +1,5 @@
 
-  RESTool
-=========================================
-
-[![Latest Version](https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=e50000)](https://packagist.org/packages/lorddashme/restool) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool/stats)
+# RESTool [![Latest Version](https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=e50000)](https://packagist.org/packages/lorddashme/restool) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool/stats)
 
 # About
 A PHP Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.
