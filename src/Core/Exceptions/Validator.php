@@ -9,20 +9,26 @@ namespace Restool\Core\Exceptions;
  * @since January 2017
  */
 
-use Exception;
+use Restool\Core\Exceptions\Database\DatabaseConnectionException;
 
-class Validator {
+use Restool\Core\Exceptions\Input\ValidateIfEmptyInputException;
+use Restool\Core\Exceptions\Input\ValidateIfArrayInputException;
+use Restool\Core\Exceptions\Input\ValidateIfNumericInputException;
+use Restool\Core\Exceptions\Input\ValidateIfStringInputException;
+use Restool\Core\Exceptions\Input\ValidateIfBooleanInputException;
 
+class Validator 
+{
 	/**
      * Validate Database Connection
      *
      * @param array $connection
      * @return void
      */
-	public static function checkDatabaseConnection($connection) {
-		
+	public static function checkDatabaseConnection($connection) 
+	{
 		if (!$connection) {
-			throw new Exception('No connection to the Database.');
+			throw new DatabaseConnectionException('No connection to the Database.');
 		}
 	}
 
@@ -33,10 +39,10 @@ class Validator {
      * @param string $field
      * @return string
      */
-	public static function isEmptyInput($input, $field) {
-		
+	public static function isEmptyInput($input, $field) 
+	{
 		if (empty($input)) {
-			throw new Exception('The input value is empty! parameter key is ['.$field.']');
+			throw new ValidateIfEmptyInputException('The input value is empty! parameter key is ['.$field.']');
 		}
 
 		return $input;
@@ -49,10 +55,10 @@ class Validator {
      * @param string $field
      * @return array
      */
-	public static function isArrayInput($input, $field) {
-		
+	public static function isArrayInput($input, $field) 
+	{	
 		if (!is_array($input)) {
-			throw new Exception('The input value is not a Array type! parameter key is ['.$field.']');
+			throw new ValidateIfArrayInputException('The input value is not a Array type! parameter key is ['.$field.']');
 		}
 
 		return $input;
@@ -65,10 +71,10 @@ class Validator {
      * @param string $field
      * @return integer
      */
-	public static function isNumericInput($input, $field) {
-		
+	public static function isNumericInput($input, $field) 
+	{
 		if (!is_numeric($input)) {
-			throw new Exception('The input value is not a Numeric type! parameter key is ['.$field.']');
+			throw new ValidateIfNumericInputException('The input value is not a Numeric type! parameter key is ['.$field.']');
 		}
 
 		return $input;
@@ -81,10 +87,10 @@ class Validator {
      * @param string $field
      * @return string
      */
-	public static function isStringInput($input, $field) {
-		
+	public static function isStringInput($input, $field) 
+	{
 		if (!is_string($input)) {
-			throw new Exception('The input value is not a String type! parameter key is ['.$field.']');
+			throw new ValidateIfStringInputException('The input value is not a String type! parameter key is ['.$field.']');
 		}
 
 		return $input;
@@ -97,10 +103,10 @@ class Validator {
      * @param string $field
      * @return boolean
      */
-    public static function isBooleanInput($input, $field) {
-    	
+    public static function isBooleanInput($input, $field) 
+    {	
     	if (!is_bool($input)) {
-			throw new Exception('The input value is not a Boolean type! parameter key is ['.$field.']');
+			throw new ValidateIfBooleanInputException('The input value is not a Boolean type! parameter key is ['.$field.']');
 		}
 
 		return $input;

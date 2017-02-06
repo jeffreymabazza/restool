@@ -2,7 +2,7 @@
     "name": "lorddashme/restool",
     "type": "package",
     "description": "A PHP Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.",
-    "keywords": ["WebServices","API","RESTful","RESTling","REST","PHP","HTTP"],
+    "keywords": ["WebServices","API","RESTful","RESTool","REST","PHP","HTTP"],
     "homepage": "https://github.com/LordDashMe/restool",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.5.12",
-        "lorddashme/restool": "v1.0.0"
+        "lorddashme/restool": "v2.0.0"
     },
     "repositories": [
         {
@@ -39,8 +39,7 @@
                         "Restool\\": "src/"
                     }
                 }
-            }
-            
+            }  
         }
     ]
 }

@@ -3,6 +3,8 @@
 |  API IMPLEMENTATION MANUAL  |
 -------------------------------
 
+NOTE: This Manual is deprecated as per v2.0.0 changed core files, this manual will be updated soon.
+
 ---------------------------------------------------
 ## TABLE OF CONTENTS ##
 	

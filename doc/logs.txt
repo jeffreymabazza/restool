@@ -3,6 +3,25 @@
 |  API CHANGE LOGS & VERSION CONTROL |
 --------------------------------------
 
+## v2.0.0 ##
+[02-05-2017] - Joshua Clifford Reyes
+
+* Used PSR-4 namespacing.
+* New Core Folder Structure.
+	- doc
+		- logs.txt
+		- manual.txt
+	- src
+		- Core
+			- Exceptions
+			- Request
+			- Response
+			- Utilities
+		- Plugins
+			- Ecryption
+			- Hashing
+* Deprecated the prefix style folder structure.
+
 ## v1.0.0 ##
 
 [12-11-2016] - Joshua Clifford Reyes

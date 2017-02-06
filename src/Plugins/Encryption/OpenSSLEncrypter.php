@@ -54,7 +54,7 @@ class OpenSSLEncrypter {
 				break;
 		}
 		
-		if (static::supported($key, $method)) {
+		if ($this->supported($key, $method)) {
 			$this->key = $key;
 			$this->method = $method;
 		} else {
@@ -70,7 +70,7 @@ class OpenSSLEncrypter {
 	 * @param string $method
 	 * @return boolean
 	 */
-	public static function supported($key, $method) {
+	private function supported($key, $method) {
 
 		$length = mb_strlen($key, '8bit');
 

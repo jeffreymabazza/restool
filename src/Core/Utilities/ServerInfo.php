@@ -9,17 +9,17 @@ namespace Restool\Core\Utilities;
  * @since January 2017
  */
 
-class ServerInfo {
-
+class ServerInfo 
+{
 	/**
      * Get Current Server DateTime
      *
      * @return date
      */
-	public static function time() {
-		
-		date_default_timezone_set("Asia/Manila");
-        
+	public static function time($timezone = 'Asia/Manila') 
+	{
+		date_default_timezone_set($timezone);
+
         return date('Y-m-d H:i:s');
 	}
 }

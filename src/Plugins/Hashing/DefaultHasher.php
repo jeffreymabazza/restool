@@ -18,7 +18,7 @@ class DefaultHasher {
 	 *
 	 * @var int
 	 */
-	private static $cost = 8;
+	private $cost = 8;
 
 	/**
 	 * Hash given value.
@@ -29,9 +29,9 @@ class DefaultHasher {
 	 * 
 	 * @throws \RuntimeException 
 	 */
-	public static function make($value, $cost = null) {
+	public function make($value, $cost = null) {
 
-		$cost = isset($cost) ? $cost : static::$cost;
+		$cost = isset($cost) ? $cost : $this->cost;
 
 		$hash = password_hash($value, PASSWORD_DEFAULT, ['cost' => $cost]);
 
@@ -50,9 +50,9 @@ class DefaultHasher {
 	 * @param int $cost
 	 * @return boolean
 	 */
-	public static function validate($value, $hashed, $cost = null) {
+	public function validate($value, $hashed, $cost = null) {
 
-		$cost = isset($cost) ? $cost : static::$cost;
+		$cost = isset($cost) ? $cost : $this->cost;
 
 		if (strlen($hashed) === 0) {
 			return false;
@@ -70,9 +70,9 @@ class DefaultHasher {
 	 * @param int $cost
 	 * @return string
 	 */
-	public static function remake($value, $hashed, $cost = null) {
+	public function remake($value, $hashed, $cost = null) {
 
-		$cost = isset($cost) ? $cost : static::$cost;
+		$cost = isset($cost) ? $cost : $this->cost;
 
 		if (!DefauleHasher::validate($value, $hashed, $cost)) {
 			return 'Not valid hashed'; 
@@ -92,9 +92,9 @@ class DefaultHasher {
 	 * @param int $cost
 	 * @return string
 	 */
-	public static function needsRehash($hashed, $cost = null) {
+	public function needsRehash($hashed, $cost = null) {
 
-		$cost = isset($cost) ? $cost : static::$cost;
+		$cost = isset($cost) ? $cost : $this->cost;
 
 		return password_needs_rehash($hashed, PASSWORD_DEFAULT, ['cost' => $cost]);
 	}

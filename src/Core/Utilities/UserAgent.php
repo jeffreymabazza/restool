@@ -9,17 +9,19 @@ namespace Restool\Core\Utilities;
  * @since January 2017
  */
 
-class UserAgent {
-
+class UserAgent 
+{
 	/**
      * Get Current Used Browser
      * Performance: Time Complexity
+     *  - Best-case O(1).
+     *  - Average-case O(1).
      *  - Worst-case O(1).
      *
      * @return string
      */
-	public static function usedBrowser() {
-		
+	public static function usedBrowser() 
+	{
         $user_agent = $_SERVER['HTTP_USER_AGENT'];
 
 		if (strpos($user_agent, 'Opera') || strpos($user_agent, 'OPR/')) {
