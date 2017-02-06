@@ -1,12 +1,13 @@
 
-<font size="100" align="center">RESTool</font>
-<p align="center">
+<h1 align="center">
+	RESTool
+	<br>
 	<a href="https://github.com/LordDashMe/restool/releases"><img src="https://img.shields.io/github/release/lorddashme/restool.svg?colorB=e50000" alt="Release"></a>
 	<a href="https://packagist.org/packages/lorddashme/restool"><img src="https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=00e500" alt="Packgist Latest Version"></a>
 	<a href="https://packagist.org/packages/lorddashme/restool/stats"><img src="https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500" alt="Packgist Downloads"></a>
 	<a href="https://github/contributors/lorddashme/restool"><img src="https://img.shields.io/github/contributors/lorddashme/restool.svg?colorB=00e500" alt="Contributors"></a>
 	<a href="https://packagist.org/l/lorddashme/restool"><img src="https://img.shields.io/packagist/l/lorddashme/restool.svg" alt="License"></a>
-</p>
+</h1>
 
 # About
 A PHP Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.
