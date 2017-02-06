@@ -29,12 +29,13 @@ PHP >= 5.5.12
 	use Restool\Plugins\Hashing\DefaultHasher as RestoolDefaultHasher;
 
 	// Set the header and method used by the API script.
-	RestoolRequest::header();
+	RestoolRequest::evaluateToken(RestoolRequest::getToken());
 	RestoolRequest::method('GET');
 
 	// content|logic body here...
 
 	// Response of the API.
+	RestoolResponse::header();
 	RestoolResponse::encode(200, (new RestoolDefaultHasher)->make('Hello World!', 8));
 ?>
 ```
