@@ -10,7 +10,7 @@
 </h1>
 
 # About
-A PHP Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.
+A PHP Library for making API (RESTful) response easy. With the latest Industry Standard Functions and Security.
 * v2.0.0
 
 # Requirements
