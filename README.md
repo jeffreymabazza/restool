@@ -1,6 +1,6 @@
 
 <p align="center">
-	<a> RESTool </a>
+	<h1><b> RESTool </b></h1>
 </p>
 
 [![Release](https://img.shields.io/github/release/lorddashme/restool.svg?colorB=e50000)](https://github.com/LordDashMe/restool/releases) [![Latest Version](https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool/stats) [![Contributors](https://img.shields.io/github/contributors/lorddashme/restool.svg?colorB=00e500)](https://github/contributors/lorddashme/restool) [![License](https://img.shields.io/packagist/l/lorddashme/restool.svg)](https://packagist.org/l/lorddashme/restool) 
