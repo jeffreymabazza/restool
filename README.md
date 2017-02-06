@@ -38,7 +38,7 @@ PHP >= 5.5.12
 
 ```
 	"require": {
-        "lorddashme/restool": "v1.0.0"
+        "lorddashme/restool": "v2.0.0"
 	}
 ```
 
