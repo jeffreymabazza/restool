@@ -1,7 +1,7 @@
 
 <p align="center">
 	<a>
-		<b>RESTool</b>
+		<font size="10"><b>RESTool</b></font>
 	</a>
 </p>
 
