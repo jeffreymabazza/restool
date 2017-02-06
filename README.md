@@ -1,8 +1,10 @@
 
 <p align="center">
 	<a>
-		<font size="10"><b>RESTool</b></font>
+		<font size="100"><b>RESTool</b></font>
 	</a>
+</p>
+<p align="center">
 	<a href="https://github.com/LordDashMe/restool/releases"><img src="https://img.shields.io/github/release/lorddashme/restool.svg?colorB=e50000" alt="Release"></a>
 	<a href="https://packagist.org/packages/lorddashme/restool"><img src="https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=00e500" alt="Packgist Latest Version"></a>
 	<a href="https://packagist.org/packages/lorddashme/restool/stats"><img src="https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500" alt="Packgist Downloads"></a>
