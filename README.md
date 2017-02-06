@@ -3,9 +3,12 @@
 	<a>
 		<font size="10"><b>RESTool</b></font>
 	</a>
+	<a href="https://github.com/LordDashMe/restool/releases"><img src="https://img.shields.io/github/release/lorddashme/restool.svg?colorB=e50000" alt="Release"></a>
+	<a href="https://packagist.org/packages/lorddashme/restool"><img src="https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=00e500" alt="Packgist Latest Version"></a>
+	<a href="https://packagist.org/packages/lorddashme/restool/stats"><img src="https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500" alt="Packgist Downloads"></a>
+	<a href="https://github/contributors/lorddashme/restool"><img src="https://img.shields.io/github/contributors/lorddashme/restool.svg?colorB=00e500" alt="Contributors"></a>
+	<a href="https://packagist.org/l/lorddashme/restool"><img src="https://img.shields.io/packagist/l/lorddashme/restool.svg" alt="License"></a>
 </p>
-
-[![Release](https://img.shields.io/github/release/lorddashme/restool.svg?colorB=e50000)](https://github.com/LordDashMe/restool/releases) [![Latest Version](https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool) [![Packagist Downloads](https://img.shields.io/packagist/dt/lorddashme/restool.svg?colorB=00e500)](https://packagist.org/packages/lorddashme/restool/stats) [![Contributors](https://img.shields.io/github/contributors/lorddashme/restool.svg?colorB=00e500)](https://github/contributors/lorddashme/restool) [![License](https://img.shields.io/packagist/l/lorddashme/restool.svg)](https://packagist.org/l/lorddashme/restool) 
 
 # About
 A PHP Library for making API (RESTful) easy. With the latest Industry Standard Functions and Security.
