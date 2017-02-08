@@ -13,37 +13,14 @@ use Restool\Core\Utilities\ServerInfo;
 
 class Response 
 {
-	/**
-     * Set the default resources JSON (RESTful) response.
-     *
-     * @param  int  $code - HTTP Code
-     * @param  string  $message - Rsult Data of Request
-     * @param  boolean  $error - Error Flag
-     * @return json
-     */
-	public static function encode($code = 200, $message = array(), $error = false) 
-    {
-        echo json_encode(
-        	array(
-		 		'status' => self::httpCode($code),
-	            'message' => $message,
-	            'error' => $error,
-                'server-time' => ServerInfo::time()
-        	)
-        );
-	}
-
-	/**
+    /**
      * Set the response header.
      *
      * @param  int  $code - HTTP Code
      * @return void
      */
-	public static function header($code = 200) 
+    public static function header() 
     {
-		$protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.1');
-        
-        header($protocol .' '. $code .' '. self::httpCode($code));
         header("Content-Type: application/json;charset=utf-8");
 
         if (isset($_SERVER['HTTP_ORIGIN'])) {
@@ -53,28 +30,51 @@ class Response
         }
 
         if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
-
-        	if ($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']) {
-        		header("Access-Control-Allow-Methods: GET, POST, OPTIONS");	
-        	}
-
-        	if ($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']) {
-        		header('Access-Control-Allow-Headers: '. $_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']);
-        	}
-            
+            if ($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']) {
+                header("Access-Control-Allow-Methods: GET, POST, OPTIONS"); 
+            }
+            if ($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']) {
+                header('Access-Control-Allow-Headers: '. $_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']);
+            }
             exit(0);
         }
-	}
+    }
 
-	/**
+    /**
+     * Set the default resources JSON (RESTful) response.
+     *
+     * @param  int  $code - HTTP Code
+     * @param  string  $message - Rsult Data of Request
+     * @param  boolean  $error - Error Flag
+     * @return json
+     */
+    public static function content($code = 200, $message = array(), $error = false) 
+    {
+        self::header();
+        
+        $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.1');
+        
+        header($protocol .' '. $code .' '. self::httpCode($code));
+
+        echo json_encode(
+            array(
+                'status' => self::httpCode($code),
+                'message' => $message,
+                'error' => $error,
+                'server-time' => ServerInfo::time()
+            )
+        );
+    }
+
+    /**
      * List of HTTP code.
      *
      * @param  int  $code - HTTP Code
      * @return string
      */
-	public static function httpCode($code) 
+    public static function httpCode($code) 
     {
-		switch ($code) {
+        switch ($code) {
             case 100: return 'Continue';
             case 101: return 'Switching Protocols';
             case 200: return 'OK';
@@ -116,5 +116,5 @@ class Response
                 exit('Unknown http status code "' . htmlentities($code) . '"');
                 break;
         }
-	}
+    }
 }

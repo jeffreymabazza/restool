@@ -3,53 +3,22 @@
 namespace Restool\Core\Request;
 
 /**
- * Restool Primary Class Request
+ * Restool Primary Class for Request
  *
  * @author Joshua Clifford Reyes<reyesjoshuacliffrord@gmail.com>
  * @since February 2017
  */
 
-class Request 
+use Restool\Core\Foundation\Request\Bridge\RequestInterface;
+use Restool\Core\Foundation\Request\Service\Request;
+
+class Request
 {
-	/**
-     * Allowed request method
-     *
-     * @param  string  $method
-     * @return void
-     */
-	public static function method($method) 
+	public function __contruct(RequestInterface $request) 
 	{
-		if ($_SERVER['REQUEST_METHOD'] != $method) {
-            exit('Method used is not allowed, use '. htmlentities($method) .' instead.');
-		}
+
 	}
+	public function method($method) {
 
-	/**
-     * Get all request headers.
-     *
-     * @return string
-     */
-	public static function getToken() 
-	{
-		$token = '';
-		foreach (getallheaders() as $key => $value) {
-		    if ($key == '_restool_token') {
-		    	$token = $value;
-		    	break;
-		    }
-		}
-
-		return $token;
-	}
-
-	/**
-     * Check the token if valid for the request.
-     *
-     * @param  string  $token
-     * @return mixed
-     */
-	public static function evaluateToken($token) 
-	{
-		// TO DO:
 	}
 }
