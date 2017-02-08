@@ -11,7 +11,7 @@
 
 # About
 A PHP Library for making API (RESTful) response easy. With the latest Industry Standard Functions and Security.
-* v2.1.0
+* v2.1.1
 
 # Requirements
 ```
@@ -44,7 +44,7 @@ PHP >= 5.5.12
 
 ```
 	"require": {
-        "lorddashme/restool": "v2.1.0"
+        "lorddashme/restool": "v2.1.1"
 	}
 ```
 

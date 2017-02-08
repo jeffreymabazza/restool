@@ -12,7 +12,7 @@ namespace Restool\Core\Foundation\Response\Services;
 use Restool\Core\Utilities\ServerInfo;
 use Restool\Core\Foundation\Response\Bridges\ResponseInterface;
 
-class Response implements ResponseInterface
+class ResponseService implements ResponseInterface
 {
     /**
      * Set the response header.
@@ -49,7 +49,7 @@ class Response implements ResponseInterface
      * @param  boolean  $error - Error Flag
      * @return json
      */
-    public function content($code = 200, $message = array(), $error = false) 
+    public function content($code, $message, $error) 
     {
         $this->header();
         

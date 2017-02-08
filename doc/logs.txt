@@ -3,6 +3,12 @@
 |  PACKAGE LOGS  |
 ------------------
 
+## v2.1.1 ##
+[02-08-2017] - Joshua Clifford Reyes
+
+* Default paramter are now declare in Facade parameter.
+* Fixed Bug on Response Facade class.
+
 ## v2.1.0 ##
 [02-08-2017] - Joshua Clifford Reyes
 

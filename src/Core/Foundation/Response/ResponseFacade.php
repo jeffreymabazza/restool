@@ -36,7 +36,7 @@ class ResponseFacade
      * @param  boolean  $error - Error Flag
      * @return json
      */
-	public static function content($code, $message, $error) 
+	public static function content($code = 200, $message = array(), $error = false) 
 	{
 		$responseService = new ResponseService();
 		(new ResponseAdapter($responseService))->adapt->content($code, $message, $error);
@@ -49,7 +49,7 @@ class ResponseFacade
      * @param  int  $code - HTTP Code
      * @return string
      */
-	public static function httpCode($code)
+	public static function httpCode($code = 200)
 	{
 		$responseService = new ResponseService();
 		(new ResponseAdapter($responseService))->adapt->httpCode($code);
