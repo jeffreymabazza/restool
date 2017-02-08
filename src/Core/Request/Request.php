@@ -9,16 +9,9 @@ namespace Restool\Core\Request;
  * @since February 2017
  */
 
-use Restool\Core\Foundation\Request\Bridge\RequestInterface;
-use Restool\Core\Foundation\Request\Service\Request;
+use Restool\Core\Foundation\Request\RequestFacade;
 
-class Request
+class Request extends RequestFacade
 {
-	public function __contruct(RequestInterface $request) 
-	{
-
-	}
-	public function method($method) {
-
-	}
+	
 }

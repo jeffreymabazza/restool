@@ -13,11 +13,6 @@ use Restool\Core\Foundation\Request\Bridges\RequestInterface;
 
 class RequestService implements RequestInterface
 {
-	public function __construct() 
-	{
-
-	}
-
 	/**
      * Allowed request method
      *

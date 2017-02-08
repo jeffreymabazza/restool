@@ -11,7 +11,7 @@
 
 # About
 A PHP Library for making API (RESTful) response easy. With the latest Industry Standard Functions and Security.
-* v2.0.0
+* v2.1.0
 
 # Requirements
 ```
@@ -35,8 +35,7 @@ PHP >= 5.5.12
 	// content|logic body here...
 
 	// Response of the API.
-	RestoolResponse::header();
-	RestoolResponse::encode(200, (new RestoolDefaultHasher)->make('Hello World!', 8));
+	RestoolResponse::content(200, (new RestoolDefaultHasher)->make('Hello World!', 8));
 ?>
 ```
 
@@ -45,7 +44,7 @@ PHP >= 5.5.12
 
 ```
 	"require": {
-        "lorddashme/restool": "v2.0.0"
+        "lorddashme/restool": "v2.1.0"
 	}
 ```
 
