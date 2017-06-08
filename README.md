@@ -4,7 +4,7 @@
 	<br>
 	<a href="https://github.com/LordDashMe/restool/releases"><img src="https://img.shields.io/github/release/LordDashMe/restool.svg?maxAge=2592000&colorB=de0404" alt="Release"></a>
 	<a href="https://packagist.org/packages/lorddashme/restool"><img src="https://img.shields.io/packagist/v/lorddashme/restool.svg?colorB=00e500" alt="Packgist Latest Version"></a>
-	<a href="https://packagist.org/packages/lorddashme/restool/stats"><img src="https://img.shields.io/packagist/v/lorddashme/restool.svg?maxAge=2592000" alt="Packgist Downloads"></a>
+	<a href="https://packagist.org/packages/lorddashme/restool/stats"><img src="https://img.shields.io/packagist/dt/lorddashme/restool.svg?maxAge=2592000" alt="Packgist Downloads"></a>
 	<a href="https://github/contributors/lorddashme/restool"><img src="https://img.shields.io/github/contributors/LordDashMe/restool.svg?maxAge=2592000" alt="Contributors"></a>
 	<a href="https://packagist.org/l/LordDashMe/restool"><img src="https://img.shields.io/packagist/l/lorddashme/restool.svg" alt="License"></a>
 	<br>
