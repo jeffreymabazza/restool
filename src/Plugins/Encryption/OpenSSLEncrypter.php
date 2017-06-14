@@ -11,8 +11,8 @@ namespace Restool\Plugins\Encryption;
 
 use RuntimeException;
 
-class OpenSSLEncrypter {
-
+class OpenSSLEncrypter 
+{
 	/**
 	 * Secret key.
 	 *
@@ -35,8 +35,8 @@ class OpenSSLEncrypter {
 	 *
 	 * @throws \RuntimeException
 	 */
-	public function __construct($key, $method = 'AES-256-CTR') {
-
+	public function __construct($key, $method = 'AES-256-CTR') 
+	{
 		$key = (string) $key;
 
 		if (!$key) {
@@ -70,8 +70,8 @@ class OpenSSLEncrypter {
 	 * @param string $method
 	 * @return boolean
 	 */
-	private function supported($key, $method) {
-
+	private function supported($key, $method) 
+	{
 		$length = mb_strlen($key, '8bit');
 
 		return ($method == 'AES-256-CTR' && $length == 64) || ($method == 'AES-128-CTR' && $length == 32);
@@ -83,8 +83,8 @@ class OpenSSLEncrypter {
 	 * @param string $plaintext
 	 * @return string
 	 */
-	public function encrypt($plaintext) {
-
+	public function encrypt($plaintext) 
+	{
 		$iv = mcrypt_create_iv($this->getIvSize(), MCRYPT_DEV_URANDOM);
 
 		$encrypted = openssl_encrypt(serialize($plaintext), $this->method, $this->key, 0, $iv);
@@ -102,8 +102,8 @@ class OpenSSLEncrypter {
 	 * @param string $payload
 	 * @return string
 	 */
-	public function decrypt($payload) {
-
+	public function decrypt($payload) 
+	{
 		$payload = json_decode(base64_decode($payload), true);
 
 		$decrypted = openssl_decrypt($payload['value'], $this->method, $this->key, 0, base64_decode($payload['iv']));
@@ -120,8 +120,8 @@ class OpenSSLEncrypter {
 	 *
 	 * @return int
 	 */
-	private function getIvSize() {
-		
+	private function getIvSize() 
+	{
 		return openssl_cipher_iv_length($this->method);
 	}
 }
