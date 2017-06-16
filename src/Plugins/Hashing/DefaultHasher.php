@@ -21,6 +21,7 @@ class DefaultHasher extends Hasher
 	public function __construct()
 	{
 		$this->setCost(8);
+		
 		$this->setHashAlgorithm(PASSWORD_DEFAULT);
 	}
 }

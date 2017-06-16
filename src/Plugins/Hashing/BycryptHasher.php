@@ -21,6 +21,7 @@ class BycryptHasher extends Hasher
 	public function __construct()
 	{
 		$this->setCost(10);
+		
 		$this->setHashAlgorithm(PASSWORD_BCRYPT);
 	}
 }
