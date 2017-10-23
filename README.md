@@ -59,5 +59,5 @@ PHP >= 5.5.12
 
 # Author
 ```
-	Joshua Clifford Reyes<reyesjoshuacliffrord@gmail.com>
+	Joshua Clifford Reyes <reyesjoshuacliffrord@gmail.com>
 ```
